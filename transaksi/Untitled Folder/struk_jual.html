@@ -1,0 +1,110 @@
+<?php error_reporting(0); ?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Laporan Penjualan | TOKO OBAT BERIZIN & KOSMETIK RENDY</title>
+	</head>
+
+	<body>
+							<div>
+								<div style="margin-left: 0; margin-top: 0">
+									<img src="head.png" style="width: 350px" alt="Logo Amanah"/><br>
+								</div>
+								<br />
+							</div>
+							<div style="margin-left: 0">
+								<span style="font-size: 12px; font-family: tahoma"><b>No. Nota</b> : N00001</span><br />
+								<span style="font-size: 12px; font-family: tahoma"><b>Tanggal</b> : 27-04-2022</span>
+								<br />
+								<span style="font-size: 12px; font-family: tahoma"><b>Kasir</b> :  Teguh</span><br />
+								==================================================
+								<table width="360px" border="0" cellspacing="0" style="font-size: 14px; font-family: tahoma">
+									<tr>
+										<th width="200px">Nama Barang</th>
+										<th width="60px">Harga</th>
+										<th width="30px">Qty</th>
+										<th width="60px">Subtotal</th>
+									</tr>
+									<tr>
+										<td>Baju anak anak</td>
+										<td align="center">100.000</td>
+										<td align="center">1</td>
+										<td align="right">100.000</td>
+									</tr>
+									<tr>
+										<td>Men silk</td>
+										<td align="center">60.000</td>
+										<td align="center">2</td>
+										<td align="right">120.000</td>
+									</tr>
+									<tr>
+										<td>gorden jendela</td>
+										<td align="center">54.000</td>
+										<td align="center">1</td>
+										<td align="right">54.000</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td colspan="3">---------------------------------------</td>
+									</tr>
+									<tr>
+										<td colspan="2" align="right">Total</td>
+										<td colspan="2" align="right">274.000</td>
+									</tr>
+									<tr>
+										<td colspan="2" align="right">Bayar</td>
+										<td colspan="2" align="right">300.000</td>
+									</tr>
+									<tr>
+										<td colspan="2" align="right">Kembali</td>
+										<td colspan="2" align="right">26.000</td>
+									</tr>
+									<tr>
+										<td colspan="4">=============================================</td>
+									</tr>
+								</table>
+								<br />
+								<div style="margin-left: 130px">
+									<span style="font-size: 12px; font-family: tahoma"><b>===== Terima Kasih =====</b></span><br />
+								</div>
+							</div>
+	
+		<!-- jQuery -->
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/jquery-3.2.0.min.js"></script>
+		
+		<!-- Javascript DataTables-->
+		<script src="../assets/js/jquery.dataTables.js"></script>
+		<script src="../assets/js/dataTables.bootstrap.js"></script>
+		<script src="../assets/js/dataTables.responsive"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../assets/js/bootstrap.min.js"></script>
+
+		<!-- Morris Charts JavaScript -->
+		<script src="../assets/js/plugins/morris/raphael.min.js"></script>
+		<script src="../assets/js/plugins/morris/morris.min.js"></script>
+		<script src="../assets/js/plugins/morris/morris-data.js"></script>
+		
+		<!-- Chart Style -->
+		<script type="text/javascript" src="../assets/js/loader.js"></script>
+
+		<script language='javascript'>
+			$(document).ready(function() {
+				$('#dataTables-example').DataTable({
+					responsive: true
+				});
+			});
+			
+			window.load = print_d();
+			function print_d(){
+				window.print();
+			}
+		</script>
+	</body>
+</html>

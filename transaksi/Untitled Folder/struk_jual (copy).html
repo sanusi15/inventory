@@ -1,0 +1,110 @@
+<?php error_reporting(0); ?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Laporan Penjualan | TOKO OBAT BERIZIN & KOSMETIK RENDY</title>
+		
+		<!-- CSS -->
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/sb-admin.css" rel="stylesheet">
+		<link href="../assets/css/plugins/morris.css" rel="stylesheet">
+		<link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+		<!-- CSS DataTables-->
+		<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/dataTables.responsive.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			
+			<div id="page-wrapper">
+				<div class="row">
+					<div class="col-lg-4">
+						<div id="area-1">
+							<div>
+								<div align="center">
+									<img src="headdd.png" style="width: 350px" alt="Logo Amanah"/><br>
+								</div>
+								<br />
+							</div>
+							<div>
+								<span style="font-size: 12px; font-family: tahoma"><b>No. Nota</b> : N00001</span><br />
+								<span style="font-size: 12px; font-family: tahoma"><b>Tanggal</b> : 27-04-2022</span>
+								<hr>
+								<table width="360px" border="0" cellspacing="0" style="font-size: 14px; font-family: tahoma">
+									<tr>
+										<td>Kain Sarung wadimor</td>
+										<td>45.000</td>
+										<td>1</td>
+										<td>45.000</td>
+									</tr>
+									<tr>
+										<td>Kain Sarung gajah duduk</td>
+										<td>45.000</td>
+										<td>2</td>
+										<td>95.000</td>
+									</tr>
+									<tr>
+										<td>Kain Mataram</td>
+										<td>55.000</td>
+										<td>1</td>
+										<td>55.000</td>
+									</tr>
+								</table>
+								<hr>
+								<div align="left">
+									<span style="font-size: 12px; font-family: tahoma"><b>Total</b> : Rp. 145.000</span><br />
+									<span style="font-size: 12px; font-family: tahoma"><b>Bayar</b> : Rp. 200.000</span><br />
+									<span style="font-size: 12px; font-family: tahoma"><b>Kembali</b> : Rp. 55.000</span><br />
+								</div><hr>
+								<div align="center">
+									<span style="font-size: 12px; font-family: tahoma"><b>Periksa Kembali Barang Belanjaan Anda</b></span><br />
+									<span style="font-size: 12px; font-family: tahoma"><b>===== Terima Kasih =====</b></span><br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- jQuery -->
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/jquery-3.2.0.min.js"></script>
+		
+		<!-- Javascript DataTables-->
+		<script src="../assets/js/jquery.dataTables.js"></script>
+		<script src="../assets/js/dataTables.bootstrap.js"></script>
+		<script src="../assets/js/dataTables.responsive"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../assets/js/bootstrap.min.js"></script>
+
+		<!-- Morris Charts JavaScript -->
+		<script src="../assets/js/plugins/morris/raphael.min.js"></script>
+		<script src="../assets/js/plugins/morris/morris.min.js"></script>
+		<script src="../assets/js/plugins/morris/morris-data.js"></script>
+		
+		<!-- Chart Style -->
+		<script type="text/javascript" src="../assets/js/loader.js"></script>
+
+		<script language='javascript'>
+			$(document).ready(function() {
+				$('#dataTables-example').DataTable({
+					responsive: true
+				});
+			});
+			
+			window.load = print_d();
+			function print_d(){
+				window.print();
+			}
+		</script>
+	</body>
+</html>
